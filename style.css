@@ -12,15 +12,15 @@ body{
 }
 
 .header {
-    position: fixed;
+    position: fixed; /* posisi tetap berada di tempat yang sama saat di scroll*/
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 10%;
     background: #7E60BF;
-    justify-content: space-between;
+    justify-content: space-between;  /* mengatur penempatan elemen secara horizontal, di samping*/
     align-items: center;
-    z-index: 100;
+    z-index: 100; /*lapisan konten*/
 }
 
 .logo{
@@ -47,7 +47,7 @@ body{
 
 .home{
     height: 100vh;
-   display: flex;
+   display: flex; /*mengontrol tata letak elemen di halaman*/
    align-items: center;
    padding: 0 10%;
 }
