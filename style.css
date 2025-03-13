@@ -12,15 +12,16 @@ body{
 }
 
 .header {
-    position: fixed; /* posisi tetap berada di tempat yang sama saat di scroll*/
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 30%;
     background: #7E60BF;
-    justify-content: space-between;  /* mengatur penempatan elemen secara horizontal, di samping*/
+    display: flex; /* aktifkan flexbox */
+    justify-content: flex-start; /* elemen sejajar ke kiri */
     align-items: center;
-    z-index: 100; /*lapisan konten*/
+    padding: 15px 10%; /* sesuaikan padding biar gak terlalu mepet */
+    z-index: 100;
 }
 
 .logo{
@@ -37,11 +38,6 @@ body{
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
-}
-
-.navbar a:hover,
-.navbar a.active{
-    color:#ededed;
 }
 
 
