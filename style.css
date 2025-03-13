@@ -182,4 +182,14 @@ width: 100%;
     border-radius: 100%;
 }
 
+.text-purple {
+    color: #7E60BF; /* warna ungu untuk teks */
+}
+
+.custom-progress {
+    background-color: #7E60BF !important; /* warna ungu untuk progress bar */
+    color: white; /* biar angka persentase tetap terlihat */
+    font-weight: 600;
+}
+
 /* @media (max-width) */
