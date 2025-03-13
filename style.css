@@ -182,44 +182,4 @@ width: 100%;
     border-radius: 100%;
 }
 
-.skills {
-    padding: 50px 10%;
-    background: #f4f4f4;
-    text-align: center;
-}
-
-.skills h2 {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.skill-item {
-    margin: 20px 0;
-    text-align: left;
-}
-
-.skill-item span {
-    font-size: 18px;
-    font-weight: 600;
-    color: #7E60BF;
-}
-
-.progress-bar {
-    width: 100%;
-    background: #ddd;
-    height: 10px;
-    border-radius: 5px;
-    margin-top: 5px;
-    position: relative;
-}
-
-.progress {
-    height: 100%;
-    background: #7E60BF;
-    border-radius: 5px;
-    width: 0;
-    transition: width 1.5s ease-in-out;
-}
-
 /* @media (max-width) */
