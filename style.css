@@ -17,21 +17,18 @@ body{
     left: 0;
     width: 100%;
     background: #7E60BF;
-    display: flex; /* aktifkan flexbox */
-    justify-content: flex-start; /* elemen sejajar ke kiri */
-    align-items: center;
-    padding: 15px 10%; /* sesuaikan padding biar gak terlalu mepet */
+    padding: 15px 10%;
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 25px;
     color: #ededed;
     text-decoration: none;
     font-weight: 600;
 }
 
-.navbar a{
+.navbar a {
     font-size: 18px;
     color: #ededed;
     text-decoration: none;
