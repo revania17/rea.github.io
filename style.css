@@ -133,8 +133,23 @@ body{
     font-weight: 600;
 }
 
+.skills {
+    position: relative; /* supaya ga numpuk elemen lain */
+    z-index: 1;
+}
+
+
 .text-purple {
     color: #7E60BF !important;
+}
+
+.certificates {
+    margin-bottom: 50px; /* beri jarak biar ga ketumpuk */
+}
+
+#certificateCarousel {
+    max-height: 400px; /* atur tinggi maksimal */
+    overflow: hidden; /* pastikan tidak ada elemen keluar */
 }
 
 .small-btn {
