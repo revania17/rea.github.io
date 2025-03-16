@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+/* global styles */
 * {
     margin: 0;
     padding: 0;
@@ -20,143 +21,69 @@ body {
     width: 100%;
     background: #7E60BF;
     padding: 15px 10%;
-    z-index: 100;
+    z-index: 1000;
 }
 
-.logo {
-    font-size: 25px;
-    color: #ededed;
-    text-decoration: none;
-    font-weight: 600;
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
 }
 
-.navbar a {
-    font-size: 18px;
-    color: #ededed;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
 /* home section */
 .home {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 0 10%;
-    gap: 40px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 100px 10%;
+    gap: 20px;
 }
 
 .home-content {
     max-width: 600px;
 }
 
-.home-content h1 {
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.home-content p {
-    font-size: 16px;
-    margin: 20px 0 10px;
-}
-
-/* button */
-.btn-box {
-    display: flex;
-    gap: 15px;
-}
-
-.btn-box a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 50px;
-    background: white;
-    border: 2px solid #7E60BF;
-    border-radius: 8px;
-    font-size: 19px;
-    color: #7E60BF;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    position: relative;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.btn-box a:hover {
-    background: #7E60BF;
-    color: white;
-}
-
-/* social media */
-.home-sci {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-}
-
-.social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #7E60BF;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #7E60BF;
-    text-decoration: none;
-    transition: .5s;
-}
-
-.social-link:hover {
-    background: #7E60BF;
-    color: white;
-}
-
-/* image */
-.image {
-    max-width: 300px;
-    width: 100%;
-}
-
 .image img {
     width: 100%;
-    height: auto;
+    max-width: 250px;
     border-radius: 50%;
 }
 
 /* skills section */
+.skills {
+    margin-top: 50px;
+}
+
 .custom-progress {
     background-color: #7E60BF !important;
     color: white;
     font-weight: 600;
 }
 
-.skills {
-    position: relative;
-    z-index: 1;
-    margin-top: 50px;
-}
-
 /* sertifikat */
 .certificates {
     margin-bottom: 100px;
+    text-align: center;
 }
 
 .certificates img {
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
     max-height: 350px;
-    margin: 0 auto;
     display: block;
+    margin: auto;
 }
 
 #certificateCarousel {
@@ -166,52 +93,52 @@ body {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 
-/* responsive */
-@media (max-width: 768px) {
+/* responsive styles */
+@media (max-width: 992px) {
     .home {
         flex-direction: column;
         text-align: center;
         align-items: center;
+        padding: 100px 5%;
     }
-
-    .image {
-        max-width: 250px;
-        order: -1;
+    .image img {
+        max-width: 200px;
     }
-
-    .btn-box {
-        justify-content: center;
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
     }
+    .certificates img {
+        max-width: 80%;
+    }
+}
 
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        width: 35px;
-        height: 35px;
+@media (max-width: 768px) {
+    .image img {
+        max-width: 180px;
+    }
+    .certificates img {
+        max-width: 75%;
     }
 }
 
 @media (max-width: 480px) {
     .home {
-        padding: 0 5%;
+        padding: 100px 3%;
     }
-
-    .image {
-        max-width: 200px;
+    .image img {
+        max-width: 150px;
     }
-
-    .home-sci {
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
+    .certificates img {
+        max-width: 70%;
     }
-}
-
-@media (min-width: 992px) {
-    .home-sci {
-        justify-content: flex-start;
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 25px;
+        height: 25px;
     }
 }
