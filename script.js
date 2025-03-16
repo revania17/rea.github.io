@@ -21,3 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", function () {
+        let navbarCollapse = document.querySelector("#navbarNav");
+        if (navbarCollapse.classList.contains("show")) {
+            navbarCollapse.classList.remove("show");
+        }
+    });
+});
