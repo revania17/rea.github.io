@@ -205,21 +205,33 @@ body {
 
 @media (max-width: 600px) {
     .home {
+        padding: 0 5%;
+        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 20px 5%;
     }
 
     .image {
-        max-width: 220px;
-        margin-bottom: 20px; /* kasih jarak biar ga nabrak skill */
+        max-width: 230px;
+        margin-bottom: 10px; /* kasih jarak antara gambar dan teks di bawahnya */
     }
 
     .skills {
-        margin-top: 20px; /* tambah margin atas supaya tidak ketumpuk */
+        width: 100%;
+        margin-top: 30px; /* tambahin lebih banyak biar aman */
     }
 
+    .skills-title {
+        text-align: center;
+        margin-bottom: 10px; /* kasih jarak ke progress bar */
+    }
+
+    .skills-section {
+        width: 90%; /* biar nggak terlalu mepet ke sisi layar */
+        padding: 10px 0;
+    }
+    
     .home-content {
         max-width: 100%;
     }
