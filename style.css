@@ -89,12 +89,11 @@ body{
     color: white;
 }
 
-/* ikon sosial media */
 .home-sci {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    justify-content: center; /* biar tetap di tengah di layar kecil */
+    justify-content: center; 
 }
 
 .social-link {
@@ -147,6 +146,10 @@ body{
     .image {
         max-width: 250px;
     }
+
+    .btn-box {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -170,7 +173,6 @@ body{
         justify-content: flex-start; /* balik ke kiri kalau di layar besar */
     }
 }
-
 
 .custom-progress {
     background-color: #7E60BF !important; /* warna ungu untuk progress bar */
