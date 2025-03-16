@@ -133,6 +133,7 @@ body {
 .image {
     max-width: 300px;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .image img {
@@ -145,41 +146,24 @@ body {
 .skills {
     position: relative;
     z-index: 1;
-    margin-top: 100px;
+    margin-top: 50px;
+}
+
+.skills-title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.skills-section {
+    width: 85%;
+    max-width: 400px;
+    padding: 10px 0;
 }
 
 .custom-progress {
     background-color: #7E60BF !important;
     color: white;
     font-weight: 600;
-}
-
-/* sertifikat */
-.certificates {
-    margin-bottom: 100px;
-}
-
-.certificates img {
-    max-width: 80%;
-    height: auto;
-    max-height: 350px;
-    margin: 0 auto;
-    display: block;
-}
-
-#certificateCarousel {
-    max-height: 400px;
-    overflow: hidden;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 25px;
-    height: 25px;
-}
-
-.text-purple {
-    color: #7E60BF !important;
 }
 
 /* responsive */
@@ -213,22 +197,22 @@ body {
     }
 
     .image {
-        max-width: 230px;
-        margin-bottom: 10px; /* kasih jarak antara gambar dan teks di bawahnya */
+        max-width: 200px;
+        margin-bottom: 20px;
     }
 
     .skills {
+        margin-top: 50px;
         width: 100%;
-        margin-top: 30px; /* tambahin lebih banyak biar aman */
     }
 
     .skills-title {
-        text-align: center;
-        margin-bottom: 10px; /* kasih jarak ke progress bar */
+        margin-bottom: 15px;
     }
 
     .skills-section {
-        width: 90%; /* biar nggak terlalu mepet ke sisi layar */
+        width: 85%;
+        max-width: 350px;
         padding: 10px 0;
     }
     
@@ -247,7 +231,7 @@ body {
     }
 
     .image {
-        max-width: 200px;
+        max-width: 180px;
     }
 
     .home-sci {
