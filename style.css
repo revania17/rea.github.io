@@ -203,6 +203,26 @@ body {
     }
 }
 
+@media (max-width: 600px) {
+    .home {
+        padding: 0 5%;
+    }
+
+    .btn-box {
+        justify-content: center;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .image {
+        max-width: 250px;
+    }
+}
+
 @media (max-width: 480px) {
     .home {
         padding: 0 5%;
