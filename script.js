@@ -10,17 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    let navbarToggler = document.querySelector(".navbar-toggler");
-    let navbarCollapse = document.querySelector("#navbarNav");
-
-    navbarToggler.addEventListener("click", function () {
-        if (navbarCollapse.classList.contains("show")) {
-            navbarCollapse.classList.remove("show");
-        }
-    });
-});
-
 document.querySelectorAll(".nav-link").forEach(link => {
     link.addEventListener("click", function () {
         let navbarCollapse = document.querySelector("#navbarNav");
