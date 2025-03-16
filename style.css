@@ -208,18 +208,24 @@ body {
         padding: 0 5%;
     }
 
-    .btn-box {
-        justify-content: center;
-    }
-
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        width: 35px;
-        height: 35px;
+    .home-content {
+        max-width: 100%;
+        text-align: center;
     }
 
     .image {
-        max-width: 250px;
+        max-width: 220px;
+        margin-bottom: 15px;
+    }
+
+    .btn-box {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .home-sci {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
