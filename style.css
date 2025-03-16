@@ -42,6 +42,7 @@ body{
     display: flex;
     align-items: center;
     padding: 0 10%;
+    gap: 40px;
 }
 
 .home-content {
@@ -83,37 +84,17 @@ body{
     transition: .5s;
 }
 
-.btn-box a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
+.btn-box a:hover {
     background: #7E60BF;
-    z-index: -1;
-    transition: .5s;
+    color: white;
 }
 
-.btn-box a:hover::before {
-    width: 100%;
-}
-
-.btn-box a:nth-child(2) {
-    background: transparent;
-    color: #7E60BF;
-}
-
-.btn-box a:nth-child(2):hover {
-    color: #081b29;
-}
-
+/* ikon sosial media */
 .home-sci {
-    position: absolute;
-    bottom: 40px;
-    width: 170px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; /* biar tetap di tengah di layar kecil */
 }
 
 .social-link {
@@ -149,13 +130,18 @@ body{
 
 /* responsive */
 @media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image {
+        order: -1;
+    }
+
     .home-sci {
-        position: static;
-        margin-top: 20px;
-        width: 100%;
-        max-width: 200px;
         justify-content: center;
-        gap: 10px;
+        gap: 12px;
     }
 
     .image {
@@ -164,14 +150,24 @@ body{
 }
 
 @media (max-width: 480px) {
-    .home-sci {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
+    .home {
+        padding: 0 5%;
     }
 
+    .home-sci {
+        flex-direction: row; /* tetap sejajar */
+        justify-content: center;
+        gap: 10px;
+    }
+    
     .image {
         max-width: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .home-sci {
+        justify-content: flex-start; /* balik ke kiri kalau di layar besar */
     }
 }
 
