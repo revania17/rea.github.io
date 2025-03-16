@@ -116,7 +116,7 @@ body{
     justify-content: space-between;
 }
 
-.home-sci a {
+.social-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +131,7 @@ body{
     transition: .5s;
 }
 
-.home-sci a:hover {
+.social-link:hover {
     background: #7E60BF;
     color: white;
 }
@@ -144,13 +144,40 @@ body{
 .image img {
     width: 100%;
     height: auto;
-    border-radius: 100%;
+    border-radius: 50%;
 }
+
+/* responsive */
+@media (max-width: 768px) {
+    .home-sci {
+        position: static;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .image {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-sci {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .image {
+        max-width: 200px;
+    }
+}
+
 
 .custom-progress {
     background-color: #7E60BF !important; /* warna ungu untuk progress bar */
     color: white; /* biar angka persentase tetap terlihat */
     font-weight: 600;
 }
-
-/* @media (max-width) */
