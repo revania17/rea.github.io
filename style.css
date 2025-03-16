@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-*{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins',sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background: #FFE1FF;
     color: #7E60BF;
 }
 
+/* header */
 .header {
     position: fixed;
     top: 0;
@@ -37,6 +39,7 @@ body{
     transition: .3s;
 }
 
+/* home section */
 .home {
     height: 100vh;
     display: flex;
@@ -60,6 +63,7 @@ body{
     margin: 20px 0 10px;
 }
 
+/* button */
 .btn-box {
     display: flex;
     gap: 15px;
@@ -89,11 +93,12 @@ body{
     color: white;
 }
 
+/* social media */
 .home-sci {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .social-link {
@@ -116,6 +121,7 @@ body{
     color: white;
 }
 
+/* image */
 .image {
     max-width: 300px;
     width: 100%;
@@ -127,38 +133,41 @@ body{
     border-radius: 50%;
 }
 
+/* skills section */
 .custom-progress {
-    background-color: #7E60BF !important; /* warna ungu untuk progress bar */
-    color: white; /* biar angka persentase tetap terlihat */
+    background-color: #7E60BF !important;
+    color: white;
     font-weight: 600;
 }
 
 .skills {
-    position: relative; /* supaya ga numpuk elemen lain */
+    position: relative;
     z-index: 1;
+    margin-top: 50px;
 }
 
-
-.text-purple {
-    color: #7E60BF !important;
-}
-
+/* sertifikat */
 .certificates {
-    margin-bottom: 50px; /* beri jarak biar ga ketumpuk */
+    margin-bottom: 100px;
+}
+
+.certificates img {
+    max-width: 80%;
+    height: auto;
+    max-height: 350px;
+    margin: 0 auto;
+    display: block;
 }
 
 #certificateCarousel {
-    max-height: 400px; /* atur tinggi maksimal */
-    overflow: hidden; /* pastikan tidak ada elemen keluar */
+    max-height: 400px;
+    overflow: hidden;
 }
 
-.small-btn {
-    width: 40px; 
-}
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 20px; 
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 /* responsive */
@@ -166,23 +175,22 @@ body{
     .home {
         flex-direction: column;
         text-align: center;
-    }
-
-    .image {
-        order: -1;
-    }
-
-    .home-sci {
-        justify-content: center;
-        gap: 12px;
+        align-items: center;
     }
 
     .image {
         max-width: 250px;
+        order: -1;
     }
 
     .btn-box {
         justify-content: center;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -191,19 +199,19 @@ body{
         padding: 0 5%;
     }
 
-    .home-sci {
-        flex-direction: row; /* tetap sejajar */
-        justify-content: center;
-        gap: 10px;
-    }
-    
     .image {
         max-width: 200px;
+    }
+
+    .home-sci {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
     }
 }
 
 @media (min-width: 992px) {
     .home-sci {
-        justify-content: flex-start; /* balik ke kiri kalau di layar besar */
+        justify-content: flex-start;
     }
 }
