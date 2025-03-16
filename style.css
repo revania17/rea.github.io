@@ -127,6 +127,16 @@ body{
     border-radius: 50%;
 }
 
+.custom-progress {
+    background-color: #7E60BF !important; /* warna ungu untuk progress bar */
+    color: white; /* biar angka persentase tetap terlihat */
+    font-weight: 600;
+}
+
+.text-purple {
+    color: #7E60BF !important;
+}
+
 /* responsive */
 @media (max-width: 768px) {
     .home {
@@ -172,10 +182,4 @@ body{
     .home-sci {
         justify-content: flex-start; /* balik ke kiri kalau di layar besar */
     }
-}
-
-.custom-progress {
-    background-color: #7E60BF !important; /* warna ungu untuk progress bar */
-    color: white; /* biar angka persentase tetap terlihat */
-    font-weight: 600;
 }
