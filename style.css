@@ -137,6 +137,15 @@ body{
     color: #7E60BF !important;
 }
 
+.small-btn {
+    width: 40px; 
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px; 
+    height: 20px;
+}
+
 /* responsive */
 @media (max-width: 768px) {
     .home {
