@@ -14,7 +14,7 @@ body {
     color: #7E60BF;
 }
 
-/* header */
+/* Header */
 .header {
     position: fixed;
     top: 0;
@@ -41,16 +41,17 @@ body {
     transition: .3s;
 }
 
-/* home section */
+/* Home Section */
 .home {
     height: 100vh;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 10vh 5%;
     gap: 20px;
     text-align: center;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+    margin-bottom: 40px;
 }
 
 .home-content {
@@ -69,7 +70,7 @@ body {
     margin: 20px 0 10px;
 }
 
-/* button */
+/* Button Section */
 .btn-box {
     display: flex;
     gap: 15px;
@@ -100,7 +101,7 @@ body {
     color: white;
 }
 
-/* social media & image */
+/* Social Media & Image */
 .home-sci-container {
     display: flex;
     align-items: center;
@@ -137,28 +138,19 @@ body {
 .image {
     max-width: 300px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     z-index: 1;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    flex: 1;
 }
 
-.image img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-
-/* skills section */
+/* Skills Section */
 .skills {
     position: relative;
     z-index: 0;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 .skills-title {
@@ -182,7 +174,7 @@ body {
     color: #7E60BF !important;
 }
 
-/* responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
     .home {
         padding: 0 5%;
@@ -205,7 +197,6 @@ body {
 
 @media (max-width: 600px) {
     .home {
-        margin-bottom: 40px;
         padding: 0 5%;
         display: flex;
         flex-direction: column;
@@ -215,11 +206,11 @@ body {
 
     .image {
         max-width: 140px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .skills {
-        margin-top: 50px;
+        margin-top: 100px;
         width: 100%;
     }
 
@@ -232,11 +223,11 @@ body {
         max-width: 350px;
         padding: 10px 0;
     }
-    
+
     .home-content {
         max-width: 100%;
         margin-bottom: 30px; /* Tambahkan jarak bawah */
-        }
+    }
 }
 
 @media (max-width: 480px) {
@@ -249,7 +240,7 @@ body {
     }
 
     .image {
-        max-width: 180px;
+        max-width: 120px;
     }
 
     .home-sci {
@@ -261,9 +252,10 @@ body {
 
 @media (min-width: 992px) {
     .home {
-        flex-direction: row; 
-        gap: 50px; 
+        flex-direction: row;
+        gap: 50px;
     }
+
     .home-sci {
         justify-content: center;
     }
