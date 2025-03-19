@@ -51,7 +51,7 @@ body {
     padding: 10vh 5%;
     gap: 20px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px; /* Tambahkan jarak antar section */
 }
 
 .home-content {
@@ -138,7 +138,9 @@ body {
 .image {
     max-width: 300px;
     width: 100%;
+    height: auto;
     margin-bottom: 40px;
+    border-radius: 50%; /* Kembali ke bentuk oval */
     z-index: 1;
     position: relative;
     display: flex;
@@ -198,7 +200,7 @@ body {
 @media (max-width: 600px) {
     .home {
         padding: 0 5%;
-        display: flex;
+        margin-bottom: 50px; /* Tambahkan jarak di bawah home */
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -207,11 +209,11 @@ body {
     .image {
         max-width: 140px;
         margin-bottom: 30px;
+        border-radius: 50%; /* Pastikan tetap oval */
     }
 
     .skills {
-        margin-top: 100px;
-        width: 100%;
+        margin-top: 100px; /* Tambahkan jarak yang cukup */
     }
 
     .skills-title {
@@ -241,6 +243,7 @@ body {
 
     .image {
         max-width: 120px;
+        border-radius: 50%; /* Tetap oval */
     }
 
     .home-sci {
