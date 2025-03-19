@@ -48,7 +48,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10vh 5%;
+    padding: 0 10%;
     gap: 20px;
     text-align: center;
     margin-bottom: 50px; /* Tambahkan jarak antar section */
@@ -56,7 +56,6 @@ body {
 
 .home-content {
     max-width: 600px;
-    flex: 1;
 }
 
 .home-content h1 {
@@ -138,21 +137,20 @@ body {
 .image {
     max-width: 300px;
     width: 100%;
-    height: auto;
-    margin-bottom: 40px;
-    border-radius: 50%; /* Kembali ke bentuk oval */
-    z-index: 1;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 50%; 
 }
 
 /* Skills Section */
 .skills {
     position: relative;
-    z-index: 0;
-    margin-top: 80px;
+    z-index: 1;
+    margin-top: 50px;
 }
 
 .skills-title {
@@ -200,20 +198,20 @@ body {
 @media (max-width: 600px) {
     .home {
         padding: 0 5%;
-        margin-bottom: 50px; /* Tambahkan jarak di bawah home */
+        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
     .image {
-        max-width: 140px;
-        margin-bottom: 30px;
-        border-radius: 50%; /* Pastikan tetap oval */
+        max-width: 200px;
+        margin-bottom: 20px;
     }
 
     .skills {
-        margin-top: 100px; /* Tambahkan jarak yang cukup */
+        margin-top: 50px;
+        width: 100%;
     }
 
     .skills-title {
@@ -228,7 +226,6 @@ body {
 
     .home-content {
         max-width: 100%;
-        margin-bottom: 30px; /* Tambahkan jarak bawah */
     }
 }
 
@@ -242,8 +239,7 @@ body {
     }
 
     .image {
-        max-width: 120px;
-        border-radius: 50%; /* Tetap oval */
+        max-width: 180px;
     }
 
     .home-sci {
@@ -254,11 +250,6 @@ body {
 }
 
 @media (min-width: 992px) {
-    .home {
-        flex-direction: row;
-        gap: 50px;
-    }
-
     .home-sci {
         justify-content: center;
     }
