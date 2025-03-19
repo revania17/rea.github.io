@@ -8,6 +8,8 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background: #FFE1FF;
     color: #7E60BF;
 }
@@ -45,7 +47,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 10%;
+    padding: 10vh 5%;
     gap: 20px;
     text-align: center;
 }
@@ -134,6 +136,8 @@ body {
     max-width: 300px;
     width: 100%;
     margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
 }
 
 .image img {
@@ -146,7 +150,7 @@ body {
 .skills {
     position: relative;
     z-index: 1;
-    margin-top: 50px;
+    margin-top: 120px;
 }
 
 .skills-title {
@@ -200,12 +204,12 @@ body {
     }
 
     .image {
-        max-width: 200px;
+        max-width: 150px;
         margin-bottom: 20px;
     }
 
     .skills {
-        margin-top: 50px;
+        margin-top: 120px;
         width: 100%;
     }
 
@@ -221,7 +225,8 @@ body {
     
     .home-content {
         max-width: 100%;
-    }
+        margin-bottom: 30px; /* Tambahkan jarak bawah */
+        }
 }
 
 @media (max-width: 480px) {
